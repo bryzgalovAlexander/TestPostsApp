@@ -13,8 +13,8 @@ export const Info = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-     dispatch(getUserDataFromLocalStorage())
-  }, [!info, !userPosts])
+    dispatch(getUserDataFromLocalStorage())
+  }, [])
 
   return (
     <>
@@ -39,7 +39,7 @@ export const Info = () => {
               </Card.Text>
             </Card.Body>
           </Card>
-          <h2 className={'mb-4'}>All posts of {info.name}</h2>
+          <h2 className={'mb-4'}>All posts by {info.name}</h2>
           {
             userPosts.map(userPost => (
               <Card key={userPost.id} className={'mb-2 p-2'}>

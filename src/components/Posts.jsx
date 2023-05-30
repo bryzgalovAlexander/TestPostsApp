@@ -52,9 +52,7 @@ export const Posts = () => {
         <Form.Label className={'d-flex justify-content-start m-2'}>Total posts: {totalCount}</Form.Label>
       </div>
 
-
       <Row className={'justify-content-between'}>
-
         { isLoaded ?
           data.map(postItem =>
               <Card
