@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/TestPostsApp/static/css/main.c2cab247.css",
-    "main.js": "/TestPostsApp/static/js/main.51a049be.js",
+    "main.js": "/TestPostsApp/static/js/main.a3af946d.js",
     "index.html": "/TestPostsApp/index.html",
     "main.c2cab247.css.map": "/TestPostsApp/static/css/main.c2cab247.css.map",
-    "main.51a049be.js.map": "/TestPostsApp/static/js/main.51a049be.js.map"
+    "main.a3af946d.js.map": "/TestPostsApp/static/js/main.a3af946d.js.map"
   },
   "entrypoints": [
     "static/css/main.c2cab247.css",
-    "static/js/main.51a049be.js"
+    "static/js/main.a3af946d.js"
   ]
 }
