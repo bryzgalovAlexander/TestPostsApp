@@ -15,7 +15,7 @@ const initialState = {
   sortingHandler: true,
 }
 
-export const slice = createSlice({
+export const mainReducer = createSlice({
   name: 'counter',
   initialState,
   reducers: {
@@ -40,31 +40,36 @@ export const slice = createSlice({
       state.error = ''
       state.isFetchingError = false;
       state.isShownComments = true
-      state.data.map(postItem => {
+      state.data.forEach(postItem => {
         if (postItem.post.id === action.payload[0].postId) {
           postItem.showHandler = false
           postItem.comments = action.payload;
           postItem.isLoadedComments = true;
-          postItem.showHandler = !postItem.showHandler
-          }
+          postItem.showHandler = true
+          } else {
+          postItem.showHandler = false
+        }
       })
     },
     showHandle(state, action) {
-      state.data.map(postItem => {
+      state.data.forEach(postItem => {
         if (postItem.post.id === action.payload) {
           postItem.showHandler = !postItem.showHandler
+        } else {
+          postItem.showHandler = false
         }
       })
     },
     isLoadedCommentFalse(state, action) {
-      state.data.find(postItem => {
+      state.data.forEach(postItem => {
         if (postItem.post.id === action.payload) {
           postItem.isLoadedComments = false
         }
       })
     },
     isLoadedFalse(state) {
-      state.isLoaded = false
+      state.isLoaded = false;
+      state.isFetchingError= false
     },
     getInfoUser(state, action) {
       state.error = ''
@@ -80,7 +85,7 @@ export const slice = createSlice({
       }
     },
     updateLocalStorage(state) {
-      localStorage.setItem('userData', JSON.stringify({userPosts: state.userPosts, userInfo: state.info}))
+      localStorage.setItem('userData', JSON.stringify({ userPosts: state.userPosts, userInfo: state.info }))
     },
     getUserDataFromLocalStorage(state) {
       state.userPosts = JSON.parse(localStorage.getItem('userData')).userPosts;
@@ -115,5 +120,5 @@ export const {
   showHandle,
   updateLocalStorage,
   getUserDataFromLocalStorage
-} = slice.actions
-export default slice.reducer
+} = mainReducer.actions
+export default mainReducer.reducer

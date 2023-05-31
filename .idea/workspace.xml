@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc2cec5a-fde8-4fe2-9189-1cd16af08465" name="Changes" comment="">
+    <list default="true" id="cc2cec5a-fde8-4fe2-9189-1cd16af08465" name="Changes" comment="fixes">
+      <change afterPath="$PROJECT_DIR$/src/components/Posts/PostCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Posts/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/main/selectors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Posts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutMe.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavbarApp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavbarApp/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Posts.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saga/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/main/sagaActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saga/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/indexSaga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saga/sagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/main/sagas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/main/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,6 +53,15 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\TestPostsApp\src\components\Posts" />
+      <recent name="C:\Users\User\WebstormProjects\TestPostsApp\src\components\NavbarApp" />
+      <recent name="C:\Users\User\WebstormProjects\TestPostsApp\src\components\Info" />
+      <recent name="C:\Users\User\WebstormProjects\TestPostsApp\src\components\AboutMe" />
+      <recent name="C:\Users\User\WebstormProjects\TestPostsApp\src\store\main" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -44,11 +72,59 @@
       <updated>1685441741529</updated>
       <workItem from="1685441742881" duration="20000" />
       <workItem from="1685442526856" duration="1721000" />
-      <workItem from="1685454864365" duration="1941000" />
+      <workItem from="1685454864365" duration="3204000" />
+      <workItem from="1685509649399" duration="10866000" />
     </task>
+    <task id="LOCAL-00001" summary="fixes">
+      <created>1685457056460</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685457056460</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Posts/index.jsx</url>
+          <line>22</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Posts/index.jsx</url>
+          <line>18</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Posts/index.jsx</url>
+          <line>87</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,4 +1,4 @@
-import { Nav, Navbar} from "react-bootstrap";
+import {Nav, Navbar} from "react-bootstrap";
 import {Link} from "react-router-dom";
 
 export const NavbarApp = () => {

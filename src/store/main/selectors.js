@@ -1,0 +1,11 @@
+export const dataSelector = store => store.reducer.data;
+export const isLoadedSelector = store => store.reducer.isLoaded;
+export const pageSizeSelector = store => store.reducer.pageSize;
+export const currentPageSelector = store => store.reducer.currentPage;
+export const totalCountSelector = store => store.reducer.totalCount;
+export const pagesSelector = store => store.reducer.pages;
+export const isFetchingErrorSelector = store => store.reducer.isFetchingError;
+export const errorSelector = store => store.reducer.error;
+export const sortingHandlerSelector = store => store.reducer.sortingHandler;
+export const infoSelector = store => store.reducer.info;
+export const userPostsSelector = store => store.reducer.userPosts;

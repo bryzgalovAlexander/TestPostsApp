@@ -1,15 +1,22 @@
 import {Alert, Button, Card, Placeholder, Spinner} from "react-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
-import {getUserDataFromLocalStorage} from "../store/slice";
+import {getUserDataFromLocalStorage} from "../../store/main/reducer";
 import {useEffect} from "react";
+import {
+  errorSelector,
+  infoSelector,
+  isFetchingErrorSelector,
+  isLoadedSelector,
+  userPostsSelector
+} from '../../store/main/selectors'
 
 export const Info = () => {
-  const info = useSelector(store => store.reducer.info);
-  const isLoaded = useSelector(store => store.reducer.isLoaded);
-  const isFetchingError = useSelector(store => store.reducer.isFetchingError);
-  const error = useSelector(store => store.reducer.error);
-  const userPosts = useSelector(store => store.reducer.userPosts)
+  const info = useSelector(infoSelector);
+  const isLoaded = useSelector(isLoadedSelector);
+  const isFetchingError = useSelector(isFetchingErrorSelector);
+  const error = useSelector(errorSelector);
+  const userPosts = useSelector(userPostsSelector)
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -33,9 +40,9 @@ export const Info = () => {
             <Card.Body>
               <Card.Title>{info.name}</Card.Title>
               <Card.Text>
-                {"UserName: " + info.username}<br/>
-                {"E-mail: " + info.email}<br/>
-                {"Phone: " + info.phone}<br/>
+                { "UserName: " + info.username }<br/>
+                { "E-mail: " + info.email }<br/>
+                { "Phone: " + info.phone }<br/>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -51,7 +58,7 @@ export const Info = () => {
         </>
         :
         <>
-          <Card style={{width: "18rem", marginBottom: "1rem"}}>
+          <Card style={{ width: "18rem", marginBottom: "1rem" }}>
             <div className={'img-fluid w-100 m-3'}>
               <Spinner className={'m-3'}/>
             </div>
@@ -71,7 +78,12 @@ export const Info = () => {
           <Spinner className={'mt-4'}/>
         </>
       }
-      {isFetchingError && <Alert variant={'danger'}>{error}</Alert>}
+      {
+        isFetchingError &&
+        <Alert variant={'danger'}>
+          { error }
+        </Alert>
+      }
     </>
   );
 };

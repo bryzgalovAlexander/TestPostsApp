@@ -4,7 +4,7 @@ export const sagaActions = {
   FETCH_USER_INFO: 'FETCH_USER_INFO',
 };
 
-export const fetchPostsAction = (currentPage, pageSize, searchByHeader, sorting) => ({
+export const fetchPostsAction = ( currentPage, pageSize, searchByHeader, sorting ) => ({
   type: sagaActions.FETCH_DATA,
   currentPage,
   pageSize,
@@ -12,13 +12,13 @@ export const fetchPostsAction = (currentPage, pageSize, searchByHeader, sorting)
   sorting
 })
 
-export const fetchCommentsAction = (payload) => ({
+export const fetchCommentsAction = ( payload ) => ({
   type: sagaActions.FETCH_COMMENTS,
   payload,
 
 })
 
-export const fetchUserInfoAction = (payload) => ({
+export const fetchUserInfoAction = ( payload ) => ({
   type: sagaActions.FETCH_USER_INFO,
   payload
 })

@@ -1,12 +1,12 @@
-import {configureStore, getDefaultMiddleware} from '@reduxjs/toolkit'
+import {configureStore} from '@reduxjs/toolkit'
 import createSagaMiddleware from 'redux-saga'
-import {slice} from "./slice";
-import {watcherSaga} from "../saga";
+import {mainReducer} from "./main/reducer";
+import {watcherSaga} from "./main/sagas";
 
 const sagaMiddleware = createSagaMiddleware()
 
-export const store = configureStore({
-  reducer: slice,
+export const index = configureStore({
+  reducer: mainReducer,
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(sagaMiddleware),
 })
 
