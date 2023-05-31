@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc2cec5a-fde8-4fe2-9189-1cd16af08465" name="Changes" comment="fixes">
-      <change afterPath="$PROJECT_DIR$/src/components/Posts/PostCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Posts/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/main/selectors.js" afterDir="false" />
+    <list default="true" id="cc2cec5a-fde8-4fe2-9189-1cd16af08465" name="Changes" comment="refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMe.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavbarApp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavbarApp/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Posts.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saga/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/main/sagaActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saga/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/indexSaga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saga/sagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/main/sagas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/main/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Info/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Posts/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Posts/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/main/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/main/reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +62,7 @@
       <workItem from="1685441742881" duration="20000" />
       <workItem from="1685442526856" duration="1721000" />
       <workItem from="1685454864365" duration="3204000" />
-      <workItem from="1685509649399" duration="10866000" />
+      <workItem from="1685509649399" duration="20428000" />
     </task>
     <task id="LOCAL-00001" summary="fixes">
       <created>1685457056460</created>
@@ -82,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685457056460</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactoring">
+      <created>1685524396673</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685524396673</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,7 +97,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -120,7 +117,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Posts/index.jsx</url>
-          <line>87</line>
+          <line>86</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>

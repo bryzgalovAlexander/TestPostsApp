@@ -31,7 +31,7 @@ export const Posts = () => {
 
   useEffect(() => {
     dispatch(fetchPostsAction( currentPage, pageSize, searchByHeader, sortingHandler ? '' : 'desc' ));
-  }, [])
+  }, [sortingHandler])
 
   return (
     <>
@@ -83,8 +83,7 @@ export const Posts = () => {
               key={ pageNumber }
               className={'mt-2'}
               onClick={ () =>
-                dispatch(fetchPostsAction(
-                  pageNumber === 1 ? 0 : pageNumber * 10 - 10,
+                dispatch(fetchPostsAction(pageNumber === 1 ? 0 : pageNumber * 10 - 10,
                   pageSize,
                   searchByHeader,
                   sortingHandler ? '' : 'desc')

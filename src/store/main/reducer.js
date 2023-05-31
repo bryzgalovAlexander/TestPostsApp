@@ -20,12 +20,12 @@ export const mainReducer = createSlice({
   initialState,
   reducers: {
     getPostSuccess(state, action) {
-      state.error = ''
-      state.info = {}
-      state.pages = []
-      state.userPosts = []
+      state.error = '';
+      state.info = {};
+      state.pages = [];
+      state.userPosts = [];
       state.isFetchingError = false;
-      state.isLoaded = true
+      state.isLoaded = true;
       state.data = action.payload.map(
         post =>
         { return {
@@ -37,69 +37,69 @@ export const mainReducer = createSlice({
       state.totalCount = Number(action.payload.totalCount)
     },
     getComments(state, action) {
-      state.error = ''
+      state.error = '';
       state.isFetchingError = false;
-      state.isShownComments = true
+      state.isShownComments = true;
       state.data.forEach(postItem => {
         if (postItem.post.id === action.payload[0].postId) {
-          postItem.showHandler = false
+          postItem.showHandler = false;
           postItem.comments = action.payload;
           postItem.isLoadedComments = true;
-          postItem.showHandler = true
+          postItem.showHandler = true;
           } else {
-          postItem.showHandler = false
+          postItem.showHandler = false;
         }
       })
     },
     showHandle(state, action) {
       state.data.forEach(postItem => {
         if (postItem.post.id === action.payload) {
-          postItem.showHandler = !postItem.showHandler
+          postItem.showHandler = !postItem.showHandler;
         } else {
-          postItem.showHandler = false
+          postItem.showHandler = false;
         }
       })
     },
     isLoadedCommentFalse(state, action) {
       state.data.forEach(postItem => {
         if (postItem.post.id === action.payload) {
-          postItem.isLoadedComments = false
+          postItem.isLoadedComments = false;
         }
       })
     },
     isLoadedFalse(state) {
       state.isLoaded = false;
-      state.isFetchingError= false
+      state.isFetchingError= false;
     },
     getInfoUser(state, action) {
-      state.error = ''
-      state.isLoaded = true
-      state.info = action.payload
-      state.pages = []
+      state.error = '';
+      state.isLoaded = true;
+      state.info = action.payload;
+      state.pages = [];
     },
     paginate(state, action) {
-      state.totalCount = action.payload
-      const countOfPages = Math.ceil(state.totalCount/state.pageSize)
+      state.totalCount = action.payload;
+      const countOfPages = Math.ceil(state.totalCount/state.pageSize);
       for (let i = 1; i <= countOfPages; i++) {
-        state.pages.push(i)
+        state.pages.push(i);
       }
     },
     updateLocalStorage(state) {
       localStorage.setItem('userData', JSON.stringify({ userPosts: state.userPosts, userInfo: state.info }))
     },
     getUserDataFromLocalStorage(state) {
-      state.userPosts = JSON.parse(localStorage.getItem('userData')).userPosts;
-      state.info = JSON.parse(localStorage.getItem('userData')).userInfo;
+        state.userPosts = JSON.parse(localStorage.getItem('userData')).userPosts;
+        state.info = JSON.parse(localStorage.getItem('userData')).userInfo;
     },
     getAllUserPosts(state, action) {
-      state.userPosts = action.payload
+      state.userPosts = action.payload;
     },
     getError(state, action) {
       state.isFetchingError = true;
-      state.isLoaded = true
+      state.isLoaded = true;
       state.error = action.payload;
       state.pages = [];
-      state.data = []
+      state.data = [];
     },
     getSorting(state) {
       state.sortingHandler = !state.sortingHandler;

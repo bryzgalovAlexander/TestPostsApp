@@ -10,6 +10,7 @@ import {
   isLoadedSelector,
   userPostsSelector
 } from '../../store/main/selectors'
+import {useNavigate} from "react-router";
 
 export const Info = () => {
   const info = useSelector(infoSelector);
@@ -18,9 +19,16 @@ export const Info = () => {
   const error = useSelector(errorSelector);
   const userPosts = useSelector(userPostsSelector)
   const dispatch = useDispatch();
+  const localStorageData = JSON.parse(localStorage.getItem('userData'))
+  const navigate = useNavigate();
 
   useEffect(() => {
-    dispatch(getUserDataFromLocalStorage())
+    if (localStorageData) {
+      dispatch(getUserDataFromLocalStorage())
+    }
+    if (!localStorageData && isLoaded) {
+      navigate('/')
+    }
   }, [])
 
   return (
